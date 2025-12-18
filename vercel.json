@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/chat",
+      "destination": "https://6vmrs2vn8f.coze.site/run"
+    }
+  ]
+}
