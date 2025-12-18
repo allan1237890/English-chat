@@ -41,7 +41,8 @@
     const API_TOKEN = "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQwZTFhMmYwLWI4MjItNDUyYS1iNGMyLTQxODJkZDViZTliZCJ9.eyJpc3MiOiJodHRwczovL2FwaS5jb3plLmNuIiwiYXVkIjpbImNickZRSkNHUWdIUGVDSVJRTXVLNW9VZEhPMGNtdjJJIl0sImV4cCI6ODIxMDI2Njg3Njc5OSwiaWF0IjoxNzY2MDIyOTk5LCJzdWIiOiJzcGlmZmU6Ly9hcGkuY296ZS5jbi93b3JrbG9hZF9pZGVudGl0eS9pZDo3NTg1MDAzNzU0MjAyNTk1MzgyIiwic3JjIjoiaW5ib3VuZF9hdXRoX2FjY2Vzc190b2tlbl9pZDo3NTg1MDExMDI3MTIxNTM3MDQzIn0.gcb5Dqh6D5MQBmNPhBFsGfSxV4h-T4YFe3Mo6cLrVF-OkKjeW9YCWXDu_fbO1WEnWC4KP8OagUPa88AbluM7yKF-qtyh-rU-cn5aSUTkzokjcEZNeSO4rE_soQrWBgWYTV7p4caOF_e-cDhLrMZ0KdpaYRlqN2xcYlT7OhaubaqAr2mrAlz1cJ4UeAqdtSMxnBxeMZYUXrns0wA3NJXwT7KgHWmNELhpLcfduxoXuG4FImDD6pwRwqWoC4SZ8e9YYZZ4ttuJYwK8d_5gpgeYO0WNjOH5xJuZN37-2xlzW7JSUTrR-g9663aNhp-Wx8jGD4c2fcbOZzzMzbaufb7t2w"; 
     
     // API 地址
-    const API_URL = "https://6vmrs2vn8f.coze.site/run";
+    // 修改为相对路径，Vercel 会自动把 /api/chat 转发给 Coze
+    const API_URL = "/api/chat";
     
     // 生成一个随机的用户ID，保证每次刷新页面都是新的会话，或者你可以固定它
     const USER_ID = "web_user_" + Math.floor(Math.random() * 10000);
@@ -122,4 +123,5 @@
 </script>
 
 </body>
+
 </html>
